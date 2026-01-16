@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css"/>
+    <script src="/libs/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="/kanbas/courses/grades/index.css">
+
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row mt-3">
+            <div class="col text-end">
+                <div class="d-inline ms-2">
+                    <a class="btn top-row-buttons"><i class="fa fa-upload me-1" aria-hidden="true"></i>Import</a>
+                </div>
+
+                <div class="dropdown d-inline ms-2">
+                        <button class="btn top-row-buttons dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> 
+                            <i class="fa fa-download me-1" aria-hidden="true"></i></i>Export
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                </div>
+                
+                <div class="d-inline ms-2">
+                    <a class="btn top-row-buttons"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <label for="search-student-name" class="form-label"><h3>Student Names</h3></label>
+
+                        <div class="input-group">
+                            
+                            <span class="input-group-text search-prepend-magnifying-glass border-end-0">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </span>
+
+                            <input class="form-control border-start-0 border-end-0" type="text" id="search-student-name" placeholder="Search Students" title="Search by student name"/>
+                        
+                            <button class="btn btn-outline-secondary dropdown-toggle border-secondary-subtle border-start-0" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+                        <label for="search-assignment-name" class="form-label"><h3>Assignment Names</h3></label>
+
+                        <div class="input-group">
+                            
+                            <span class="input-group-text search-prepend-magnifying-glass border-end-0">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </span>
+
+                            <input class="form-control border-start-0 border-end-0" type="text" id="search-assignment-name" placeholder="Search Assignments" title="Search by student name"/>
+                        
+                            <button class="btn btn-outline-secondary dropdown-toggle border-secondary-subtle border-start-0" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                </div>  
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-3">
+                <button class="btn top-row-buttons"><i class="fa fa-filter me-1" aria-hidden="true"></i>Apply Filters</button>
+            </div> 
+        </div>
+
+        <div class="row mt-3">
+        
+            <table class="table table-bordered grading-table table-striped">
+                <thead class="table-light">
+                    <tr>
+                        <th scope="col" class="text-start student-name-col">
+                            <div>Student Name</div>
+                        </th>
+                        <th scope="col" class="text-center grade-data-column">
+                            <div>A1 SETUP</div>
+                            <div class="minor-table-text">Out of 100</div>
+                        </th>
+                        <th scope="col" class="text-center grade-data-column">
+                            <div>A2 HTML</div>
+                            <div class="minor-table-text">Out of 100</div>
+                        </th>
+                        <th scope="col" class="text-center grade-data-column">
+                            <div>A3 CSS</div>
+                            <div class="minor-table-text">Out of 100</div>
+                        </th>
+                        <th scope="col" class="text-center grade-data-column">
+                            <div>A4 BOOTSTRAP</div>
+                            <div class="minor-table-text">Out of 100</div>
+                        </th>
+                        <th scope="col" class="text-center grade-data-column">
+                            <div>A5 JAVASCRIPT</div>
+                            <div class="minor-table-text">Out of 100</div>
+                        </th>
+                        <th scope="col" class="text-center grade-data-column">
+                            <div>A6 REACT</div>
+                            <div class="minor-table-text">Out of 100</div>
+                        </th>
+                        
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><a href="#" class="red-link">Doxa Asibey</a></td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                100%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                100%
+                            </div>
+                        </td>
+
+                        <!-- INPUT CELL -->
+                        <td class="text-center pt-0 pb-0">
+                            <div class="container m-0 p-0">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <div class="d-flex align-items-center">
+                                            <input type="text" class="form-control text-center" id="assignment-name" value="89.59%">
+                                            <button class="btn top-row-buttons p-1"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td class="text-center">
+                            <div class="col-auto">
+                                98.65%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                100%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                100%
+                            </div>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td><a href="#" class="red-link">Thuy Tien Bui</a></td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                100%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                100%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                89.59%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                98.65%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                100%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                100%
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#" class="red-link">Yetong Chen</a></td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                100%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                100%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                89.59%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                98.65%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                100%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                100%
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#" class="red-link">Zhenyu Chen</a></td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                100%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                100%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                89.59%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                98.65%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                100%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                100%
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#" class="red-link">Yung-Shin Chien</a></td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                100%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                100%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                89.59%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                98.65%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                100%
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <div class="col-auto">
+                                100%
+                            </div>
+                        </td>
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+        
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
